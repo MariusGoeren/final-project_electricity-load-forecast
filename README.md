@@ -54,7 +54,6 @@ Main notebooks in the repository root:
 - git clone https://github.com/MariusGoeren/final-project_electricity-load-forecast.git
 - cd final-project_electricity-load-forecast
 
----
 ### 2️⃣ Create a Python environment
 - Using venv for EDA part:
   - & "C:\Users\**your-name**\AppData\Local\Programs\Python\Python314\python.exe" -m venv venv-eda
@@ -74,7 +73,6 @@ Main notebooks in the repository root:
   - .\venv-tft-plots\Scripts\activate
   - python.exe -m pip install --upgrade pip
 
----
 ### 3️⃣ Install requirements
 If a requirements.txt exists:
 - pip install -r requirements.txt
