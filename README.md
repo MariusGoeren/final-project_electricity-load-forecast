@@ -47,6 +47,7 @@ Main notebooks in the repository root:
 - PyTorch Forecasting (for TFT)
 
 ---
+
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
@@ -85,7 +86,7 @@ If not, install the needed dependencies manually:
 - pip install xgboost
 
 #### 🤖 Deep Learning (TensorFlow)
-- pip install tensorflowWeitere Zeilen anzeigen
+- pip install tensorflow
 
 #### 🔥 TFT + PyTorch Forecasting
 - CPU-based installation:
@@ -96,6 +97,7 @@ If not, install the needed dependencies manually:
 - For GPU/CUDA, install PyTorch according to NVIDIA compatibility (optional).
 
 ---
+
 ## 📊 Running the Notebooks
 Recommended order:
 
@@ -117,6 +119,7 @@ Recommended order:
 - 41-TFT-interpretation.ipynb
 
 ---
+
 ## 📈 Included Analyses
 ### 🔍 EDA   
 - Missing values inspection
@@ -139,6 +142,7 @@ Recommended order:
 - Global & local interpretability
 
 ---
+
 ## 📝 Future Improvements
 - Connecting the Influx DB directly to the model
 - Automatically making continuous predictions
@@ -147,6 +151,7 @@ Recommended order:
 - Add production plans to make better predictions
 
 ---
+
 # 📬 Author
 Marius Gören
 - Machine Learning & M&E Automation Specialist
