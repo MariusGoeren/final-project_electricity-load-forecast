@@ -15,22 +15,21 @@ Main notebooks in the repository root:
   Extended EDA including preparation of train/validation/test splits for XGBoost models.
 
 - **30-XGBRegressor_weather.ipynb**  
-  XGBoost regression forecasting experiments including parameter tuning, model evaluation and feature importances.
+  XGBoost regression forecasting experiments including parameter tuning and model evaluation.
 
 - **40-DeepLearning_weather.ipynb**  
-  Deep learning experiments (LSTM/GRU architectures) for multivariate electricity‑load forecasting.
+  Training and interpretation of a Temporal Fusion Transformer (TFT) model including variable importance and attention analysis.
 
 - **41-TFT-interpretation.ipynb**  
- Training and interpretation of a Temporal Fusion Transformer (TFT) model including variable importance and attention analysis.
+  Create some plots to interpret the results of the TFT model predictions.
 
 ---
 
 ## 🎯 Project Goals
 
 - Understand weather‑driven electricity load patterns through exploratory analysis.  
-- Build machine learning models (XGBoost, tree‑based regressors).  
-- Develop deep learning forecasting architectures (LSTM/GRU/Seq2Seq).  
-- Train and interpret a Temporal Fusion Transformer (TFT).  
+- Build machine learning models (XGBoost).  
+- Develop deep learning forecasting architectures (Temporal Fusion Transformer).  
 - Compare the performance of multiple forecasting methodologies.  
 
 ---
@@ -63,16 +62,17 @@ Main notebooks in the repository root:
   - .\venv-eda\Scripts\activate
   - python.exe -m pip install --upgrade pip
 
-- Using venv for ML part:
+- Using venv for ML part (XGB/TFT):
   - & "C:\Users\**your-name**\AppData\Local\Programs\Python\Python312\python.exe" -m venv venv-eda
     - if **python version 12** is not available -> install first
-  - .\venv-\Scripts\activate
+  - .\venv-ml\Scripts\activate
   - python.exe -m pip install --upgrade pip
 
-- Using venv for ML part:
-  - python3.12 -m venv .venv
-  - source .venv/bin/activate       # Linux/Mac
-  - .venv\Scripts\activate          # Windows
+- Using venv for TFT interpretation part:
+  - & "C:\Users\**your-name**\AppData\Local\Programs\Python\Python312\python.exe" -m venv venv-eda
+    - if **python version 12** is not available -> install first
+  - .\venv-tft-plots\Scripts\activate
+  - python.exe -m pip install --upgrade pip
 
 ---
 ### 3️⃣ Install requirements
@@ -102,56 +102,51 @@ If not, install the needed dependencies manually:
 Recommended order:
 
 ### 1️⃣ Exploratory Data Analysis
-
+- using **venv-eda**
 - 10-EDA_weather.ipynb
 - 11-EDA_weather_3_splits_for_XGB.ipynb
 
 ### 2️⃣ Machine Learning Models
-
+- using **venv-ml**
 - 30-XGBRegressor_weather.ipynb
 
 ### 3️⃣ Deep Learning Models
-
+- using **venv-ml**
 - 40-DeepLearning_weather.ipynb
 
 ### 4️⃣ Interpretability
-
+- using **venv-tft-plots**
 - 41-TFT-interpretation.ipynb
 
 ---
 ## 📈 Included Analyses
-### 🔍 EDA   ????????????????????????????????????????????
-- Missing value inspection
+### 🔍 EDA   
+- Missing values inspection
 - Distribution analysis
 - Weather correlations
 - Daily, weekly, yearly seasonality patterns
 - Moving averages, smoothing, trend detection
+- Cyclic encoding
 
-### 🌲 XGBoost   ????????????????????????????????????????????
+### 🌲 XGBoost
 - Dataset splitting strategy
 - Hyperparameter tuning
 - Feature importance evaluation
 - Prediction vs. actual comparison
 
-### 🤖 Deep Learning   ????????????????????????????????????????????
-- Timeseries windowing
-- LSTM/GRU forecasting architectures
-- Model training, validation curves
-- Multi‑step prediction evaluation
-
-### 🔮 Temporal Fusion Transformer (TFT)   ????????????????????????????????????????????
+### 🔮 Temporal Fusion Transformer (TFT)
 - Variable selection network
 - Attention mechanisms
 - Time‑step relevance visualizations
 - Global & local interpretability
 
 ---
-## 📝 Future Improvements   ????????????????????????????????????????????
-- Add ARIMA/Prophet benchmarks for classical comparison
+## 📝 Future Improvements
+- Connecting the Influx DB directly to the model
+- Automatically making continuous predictions
 - Incorporate additional weather features and lags
-- Hyperparameter optimization with Optuna
-- Extend TFT to multi‑regional forecasting
-- Add probabilistic forecasting metrics
+- TFT hyperparameter optimization with Optuna
+- Add production plans to make better predictions
 
 ---
 # 📬 Author
