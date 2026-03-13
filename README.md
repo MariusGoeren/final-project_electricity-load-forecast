@@ -57,23 +57,23 @@ Main notebooks in the repository root:
 
 ### 2️⃣ Create a Python environment
 - Using venv for EDA part:
-  - & "C:\Users\'your-name'\AppData\Local\Programs\Python\Python314\python.exe" -m venv **venv-eda**
+  - & "C:\Users\!!!your-name!!!\AppData\Local\Programs\Python\Python314\python.exe" -m venv **venv-eda**
     - if **python version 14** is not available -> install first
-  - .\'venv-eda'\Scripts\activate
+  - .\venv-eda\Scripts\activate  (-> **venv-eda**)
   - python.exe -m pip install --upgrade pip
   - pip install -r [requirements\requirements-eda.txt](requirements\requirements-eda.txt)
 
 - Using venv for ML part (XGB/TFT):
-  - & "C:\Users\'your-name'\AppData\Local\Programs\Python\Python312\python.exe" -m venv **venv-ml**
+  - & "C:\Users\!!!your-name!!!\AppData\Local\Programs\Python\Python312\python.exe" -m venv **venv-ml**
     - if **python version 12** is not available -> install first
-  - .\'venv-ml'\Scripts\activate
+  - .\venv-ml\Scripts\activate  (-> **venv-ml**)
   - python.exe -m pip install --upgrade pip
   - pip install -r [requirements\requirements-xgb-tft.txt](requirements\requirements-xgb-tft.txt)
 
 - Using venv for TFT interpretation part:
-  - & "C:\Users\'your-name'\AppData\Local\Programs\Python\Python312\python.exe" -m venv **venv-tft-plots**
+  - & "C:\Users\!!!your-name!!!\AppData\Local\Programs\Python\Python312\python.exe" -m venv **venv-tft-plots**
     - if **python version 12** is not available -> install first
-  - .\'venv-tft-plots''\Scripts\activate
+  - .\venv-tft-plots\Scripts\activate  (-> **venv-tft-plots**)
   - python.exe -m pip install --upgrade pip
   - pip install -r [requirements\requirements-tft_interpretation.txt](requirements\requirements-tft_interpretation.txt)
 
