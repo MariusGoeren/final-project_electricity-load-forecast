@@ -61,22 +61,21 @@ Main notebooks in the repository root:
     - if **python version 14** is not available -> install first
   - .\**venv-eda**\Scripts\activate
   - python.exe -m pip install --upgrade pip
-  - pip install -r [`requirements\requirements-eda.txt`](requirements\requirements-eda.txt)
+  - pip install -r [requirements\requirements-eda.txt](requirements\requirements-eda.txt)
 
 - Using venv for ML part (XGB/TFT):
   - & "C:\Users\**your-name**\AppData\Local\Programs\Python\Python312\python.exe" -m venv **venv-ml**
     - if **python version 12** is not available -> install first
   - .\**venv-ml**\Scripts\activate
   - python.exe -m pip install --upgrade pip
-  - pip install -r [`requirements\requirements-xgb-tft.txt](requirements\requirements-xgb-tft.txt)
+  - pip install -r [requirements\requirements-xgb-tft.txt](requirements\requirements-xgb-tft.txt)
 
 - Using venv for TFT interpretation part:
   - & "C:\Users\**your-name**\AppData\Local\Programs\Python\Python312\python.exe" -m venv **venv-tft-plots**
     - if **python version 12** is not available -> install first
   - .\**venv-tft-plots**\Scripts\activate
   - python.exe -m pip install --upgrade pip
-  - pip install -r [`requirements\requirements-tft_interpretation.txt'](requirements\requirements-tft_interpretation.txt)
-    - 
+  - pip install -r [requirements\requirements-tft_interpretation.txt](requirements\requirements-tft_interpretation.txt)
 
 ### 3️⃣ Install requirements
 If a requirements.txt exists:
