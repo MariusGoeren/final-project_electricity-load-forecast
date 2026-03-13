@@ -106,20 +106,20 @@ Recommended order:
 
 ### 1️⃣ Exploratory Data Analysis
 - using **venv-eda**
-- 10-EDA_weather.ipynb
-- 11-EDA_weather_3_splits_for_XGB.ipynb
+- [10-EDA_weather.ipynb](10-EDA_weather.ipynb)
+- [11-EDA_weather_3_splits_for_XGB.ipynb](11-EDA_weather_3_splits_for_XGB.ipynb)
 
 ### 2️⃣ Machine Learning Models
 - using **venv-ml**
-- 30-XGBRegressor_weather.ipynb
+- [30-XGBRegressor_weather.ipynb](30-XGBRegressor_weather.ipynb)
 
 ### 3️⃣ Deep Learning Models
 - using **venv-ml**
-- 40-DeepLearning_weather.ipynb
+- [40-DeepLearning_weather.ipynb](40-DeepLearning_weather.ipynb)
 
 ### 4️⃣ Interpretability
 - using **venv-tft-plots**
-- 41-TFT-interpretation.ipynb
+- [41-TFT-interpretation.ipynb](41-TFT-interpretation.ipynb)
 
 ---
 
